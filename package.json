@@ -1,5 +1,5 @@
 {
-  "name": "example-basic",
+  "name": "stoppage-admin-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite dev",

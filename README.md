@@ -1,32 +1,55 @@
-# SolidStart
+# Stoppage Admin Frontend
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+Admin operations console for **Stoppage** on **X Layer**.
 
-## Creating a project
+This app is built for operating sports prediction markets at tournament scale, not just manually creating one market at a time.
+
+## What this app does
+
+- create sports event shells
+- create structured match bundles with matchup metadata
+- generate catalog-driven child markets for a fixture
+- upload and update team images
+- publish event shells and event markets
+- set prices
+- bootstrap liquidity for one market or an entire event
+- manage resolution and market operations
+
+The admin surface is one of the main differentiators in the project because it makes World Cup-scale market operations practical during a live event cycle.
+
+## Tech stack
+
+- SolidStart
+- SolidJS
+- TypeScript
+- Vite
+
+## Local development
 
 ```bash
-# create a new project in the current directory
-npm init solid@latest
-
-# create a new project in my-app
-npm init solid@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Build
 
-Solid apps are built with _presets_, which optimise your project for deployment to different environments.
+```bash
+npm run build
+```
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different preset, add it to the `devDependencies` in `package.json` and specify in your `app.config.js`.
+## Test
 
-## This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli)
+```bash
+npm test
+```
+
+## Environment
+
+Create `.env` from `.env.example` and point the console at the backend admin API.
+
+## Related repos
+
+- Root submission overview: [`../README.md`](../README.md)
+- Public frontend: [`../stoppagefrontend`](../stoppagefrontend)
+- Backend API: [`../stoppagebackend`](../stoppagebackend)
+- Contracts: [`../stoppagecontract`](../stoppagecontract)
